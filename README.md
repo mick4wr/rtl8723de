@@ -16,3 +16,5 @@ Uninstall:
     dkms remove rtl8723de/5.1.1.8_21285.20171026_COEX20170111-1414 --all
     depmod -a
     reboot
+
+This fork attempts to fix the build failure on kernel 4.15. It is highly experimental; regular use is not recommended.

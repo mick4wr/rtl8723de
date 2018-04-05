@@ -290,7 +290,7 @@ __inline static void _init_timer(_timer *ptimer, _nic_hdl nic_hdl, void *pfunc, 
 	init_timer(ptimer); /* init_timer deprecated as of 4.15 */
 	
 	#else
-	setup_timer(ptimer, pfunc, (unsigned long)cntx);
+	timer_setup(ptimer, pfunc, (unsigned long)cntx);
 	#endif
 }
 
